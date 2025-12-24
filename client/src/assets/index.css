@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-text font-raleway;
+  }
+}
+
+@layer components {
+  .heading-h1 {
+    @apply text-4xl font-normal capitalize;
+  }
+
+  .heading-h2 {
+    @apply text-2xl font-bold;
+  }
+
+  .btn-cta {
+    @apply px-8 py-4 font-semibold text-white uppercase transition-colors bg-primary hover:bg-green-500 disabled:bg-gray-300 disabled:cursor-not-allowed;
+  }
+}
+
+/* Product Description Styles */
+.product-description h1 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.product-description h3 {
+  @apply text-lg font-bold mb-2;
+}
+
+.product-description p {
+  @apply mb-4;
+}
+
+.product-description ul {
+  @apply list-disc list-inside mb-4;
+}
+
+.product-description li {
+  @apply mb-1;
+}
+
+.product-description strong {
+  @apply font-bold;
+}
